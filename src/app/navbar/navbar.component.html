@@ -1,0 +1,42 @@
+<div class="container">
+    <div class="row">
+        <nav class="navbar navbar-dark bg-dark fixed-top" [collapse]="isCollapsed">
+            <div class="bg-dark p-4">
+              <br /><br />
+              <h5 class="text-white h4">Yunus Bağrıyanık</h5>
+              <span class="text-muted">Angular 7 Works</span>
+
+              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Link 1 <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link 2</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link 3</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+
+          <nav class="navbar navbar-dark bg-dark fixed-top flex-md-nowrap p-0 shadow">
+            <button class="navbar-toggler" (click)="isCollapsed = !isCollapsed" type="button" data-toggle="collapse"
+              data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"> </span>
+            </button>
+
+            <ul class="navbar-nav px-3">
+              <li class="nav-item text-nowrap">
+                <a *ngIf="isLoggedin() == false" class="nav-link" routerLink="/login">
+                  Giriş
+                </a>
+
+                <a *ngIf="isLoggedin() == true" (click)="logOut()" class="nav-link">
+                  Çıkış
+                </a>
+              </li>
+            </ul>
+          </nav>
+    </div>
