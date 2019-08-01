@@ -1,5 +1,9 @@
 # first angular app
-basically ecommerce app
+
+Basically ecommerce app
+
+Used HttpClientModle, data was exchanged from fake backend in json format.
+json-server --watch JSONdata.json
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.3.
 
