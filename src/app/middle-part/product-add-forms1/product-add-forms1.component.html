@@ -3,7 +3,7 @@
   <div class="form-group">
     <input
       type="text"
-      placeholder="Ürün Adı"
+      placeholder="Product Name"
       #name="ngModel"
       [(ngModel)]="model.name"
       class="form-control"
@@ -12,7 +12,7 @@
       required
     />
     <div *ngIf="name.invalid && name.dirty" class="alert alert-danger">
-      Ürün İsmi Gereklidir
+      Product name is required
     </div>
   </div>
 
@@ -31,7 +31,7 @@
       *ngIf="description.invalid && description.dirty"
       class="alert alert-danger"
     >
-      Açıklama Gereklidir
+     Description is required
     </div>
   </div>
 
@@ -47,7 +47,7 @@
       required
     />
     <div *ngIf="imageUrl.invalid && imageUrl.dirty" class="alert alert-danger">
-      Fotoğraf Gereklidir
+      Photo is required
     </div>
   </div>
 
@@ -63,7 +63,7 @@
       required
     />
     <div *ngIf="price.invalid && price.dirty" class="alert alert-danger">
-        Ürün Fiyatı Gereklidir
+      Product price is required
       </div>
   </div>
 
@@ -81,8 +81,8 @@
       </option>
     </select>
     <div *ngIf="categoryId.invalid && categoryId.touched" class="alert alert-danger">
-        Kategori Gereklidir
+        Category is required
       </div>
   </div>
-  <button type="subit" class="btn btn-dark" [disabled]="productAddForm.invalid">Ürün Ekle</button>
+  <button type="subit" class="btn btn-dark" [disabled]="productAddForm.invalid">Add product</button>
 </form>

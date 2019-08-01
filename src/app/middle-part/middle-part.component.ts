@@ -36,7 +36,7 @@ export class MiddlePartComponent implements OnInit {
   }
 
   addToCart(product){
-    this.alertifyService.success(product.name+" Eklendi")
+    this.alertifyService.success(product.name+" Added")
   }
 
 }

@@ -8,7 +8,7 @@ import { AccountService } from './services/account.service';
 })
 export class AppComponent {
   constructor(private accountService:AccountService){}
-  title = 'testApp3';
+  title = 'angular-ecommerce';
   isCollapsed = true;
   isLoggedin(){
     return this.accountService.isLoggedIn();

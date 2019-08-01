@@ -3,9 +3,9 @@ import {
   ActivatedRouteSnapshot,
   RouterStateSnapshot,
   Router
-} from "@angular/router";
-import { Injectable } from "@angular/core";
-import { AccountService } from "../services/account.service";
+} from '@angular/router';
+import { Injectable } from '@angular/core';
+import { AccountService } from '../services/account.service';
 
 @Injectable()
 export class LoginGuard implements CanActivate {
@@ -19,7 +19,7 @@ export class LoginGuard implements CanActivate {
     if (logged) {
       return true;
     }
-    this.router.navigate(["login"]);
+    this.router.navigate(['login']);
     return false;
   }
 }

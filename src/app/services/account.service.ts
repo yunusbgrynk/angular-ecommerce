@@ -9,7 +9,7 @@ export class AccountService {
   constructor() { }
   loggedIn=false;
   login(user:User):boolean {
-    if(user.userName=='Yunus' && user.password=='321'){
+    if(user.userName=='username' && user.password=='101010'){
       this.loggedIn=true;
       localStorage.setItem("isLogged","true");
       return true;

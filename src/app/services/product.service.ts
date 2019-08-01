@@ -40,9 +40,9 @@ export class ProductService {
   handleError(err: HttpErrorResponse) {
     let errorMessage = ''
     if(err.error instanceof ErrorEvent){
-      errorMessage='Bir hata oluştu '+err.error.message
+      errorMessage='Something went wrong '+err.error.message
     }else{
-      errorMessage= 'Sistemsel bir hata'
+      errorMessage= 'A systematic error has occurred'
     }
     return throwError(errorMessage);
     }

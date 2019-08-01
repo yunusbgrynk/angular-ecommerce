@@ -28,7 +28,7 @@ export class ProductAddForms1Component implements OnInit {
 
   add(form:NgForm){
     this.productService.addProduct(this.model).subscribe(data=>{
-      this.alertifyService.success(data.name + " Ürünü eklendi")
+      this.alertifyService.success(data.name + " Added product")
     });
   }
 

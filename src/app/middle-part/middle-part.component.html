@@ -12,7 +12,7 @@
 
 <ng-template #noProduct>
   <div class="alert alert-dark" role="alert">
-    Bu kategoride hiç ürün yoktur.
+    There are no products in this category.
   </div>
 </ng-template>
 
@@ -22,7 +22,7 @@
     <div class="card-body">
       <h5 class="card-title">{{product.name}} {{product.price | currency}}</h5>
       <p class="card-text">{{product.description}}</p>
-      <a (click)="addToCart(product)" href="#" class="btn btn-dark">Sepete Ekle</a>
+      <a (click)="addToCart(product)" href="#" class="btn btn-dark">Add to cart</a>
     </div>
   </div>
 </div>

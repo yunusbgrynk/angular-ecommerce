@@ -18,9 +18,9 @@ export class CategoryService {
   handleError(err: HttpErrorResponse) {
     let errorMessage = ''
     if(err.error instanceof ErrorEvent){
-      errorMessage='Bir hata oluştu '+err.error.message
+      errorMessage='Something went wrong '+err.error.message
     }else{
-      errorMessage='Sistemsel bir hata oluştu'
+      errorMessage='A systematic error has occurred'
     }
     return throwError(errorMessage);
   }

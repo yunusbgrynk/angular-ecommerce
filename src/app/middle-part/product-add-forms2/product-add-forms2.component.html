@@ -4,22 +4,22 @@
 <form [formGroup]="productAddForm" (ngSubmit)="add()">
   <div class="form-group">
     <input type="text" id="name" name="name" formControlName="name" placeholder="Ürün Adı" class="form-control">
-    <div class="alert alert-danger" *ngIf="productAddForm.get('name').hasError('required') && productAddForm.get('name').dirty">Ürün adı zorunludur</div>
+    <div class="alert alert-danger" *ngIf="productAddForm.get('name').hasError('required') && productAddForm.get('name').dirty">Product name is required</div>
   </div>
 
   <div class="form-group">
       <input type="text" id="description" name="description" formControlName="description" placeholder="Ürün Açıklaması" class="form-control">
-      <div class="alert alert-danger" *ngIf="productAddForm.get('description').hasError('required') && productAddForm.get('description').dirty">Ürün Açıklaması zorunludur</div>
+      <div class="alert alert-danger" *ngIf="productAddForm.get('description').hasError('required') && productAddForm.get('description').dirty">Description is required</div>
     </div>
 
     <div class="form-group">
         <input type="text" id="imageUrl" name="imageUrl" formControlName="imageUrl" placeholder="Fotoğraf Yolu" class="form-control">
-        <div class="alert alert-danger" *ngIf="productAddForm.get('imageUrl').hasError('required') && productAddForm.get('imageUrl').dirty">Ürün Fotoğrafı zorunludur</div>
+        <div class="alert alert-danger" *ngIf="productAddForm.get('imageUrl').hasError('required') && productAddForm.get('imageUrl').dirty"> Photo is required</div>
       </div>
 
       <div class="form-group">
           <input type="text" id="price" name="price" formControlName="price" placeholder="Ürün Fiyatı" class="form-control">
-          <div class="alert alert-danger" *ngIf="productAddForm.get('price').hasError('required') && productAddForm.get('price').dirty">Ürün fiyatı zorunludur</div>
+          <div class="alert alert-danger" *ngIf="productAddForm.get('price').hasError('required') && productAddForm.get('price').dirty"> Product price is required</div>
         </div>
 
         <div class="form-group">
@@ -36,8 +36,8 @@
               </option>
             </select>
             <div *ngIf="productAddForm.get('categoryId').hasError('required') && productAddForm.get('categoryId').touched" class="alert alert-danger">
-                Kategori Gereklidir
+              Category is required
               </div>
           </div>
-          <button type="subit" class="btn btn-dark" [disabled]="productAddForm.invalid">Ürün Ekle</button>
+          <button type="subit" class="btn btn-dark" [disabled]="productAddForm.invalid">Add product</button>
 </form>

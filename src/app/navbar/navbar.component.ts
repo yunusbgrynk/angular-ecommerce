@@ -11,7 +11,7 @@ export class NavbarComponent implements OnInit {
   isCollapsed2=true;
 
   constructor(private accountService:AccountService) {
-    console.log("Burası constructor");
+
    }
    isLoggedin(){
     return this.accountService.isLoggedIn();
@@ -20,7 +20,7 @@ export class NavbarComponent implements OnInit {
     this.accountService.logOut();
   }
   ngOnInit() {
-    console.log("Burası ngOnInit");
+
   }
 
 

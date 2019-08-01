@@ -1,17 +1,17 @@
 <form #loginForm="ngForm" (ngSubmit)="login(loginForm)" class="form-signin">
     <div class="text-center mb-4">
       <img class="mb-4" src="/docs/4.3/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72" />
-      <h1 class="h3 mb-3 font-weight-normal">Sisteme Giriş</h1>
+      <h1 class="h3 mb-3 font-weight-normal">Login the system</h1>
     </div>
 
     <div class="form-label-group">
       <input type="text" #userName="ngModel" [(ngModel)]="model.userName" id="userName" class="form-control" name="userName" placeholder="Kullanıcı Adı" required autofocus />
-      <label for="inputUserName">Kullanıcı Adı</label>
+      <label for="inputUserName">Username</label>
     </div>
 
     <div class="form-label-group">
       <input type="password" #password="ngModel" [(ngModel)]="model.password" id="userName" id="password" name="password" class="form-control" placeholder="Şifre" required />
-      <label for="inputPassword">Şifre</label>
+      <label for="inputPassword">Password</label>
     </div>
 
     <button class="btn btn-lg btn-primary btn-block" type="submit">
