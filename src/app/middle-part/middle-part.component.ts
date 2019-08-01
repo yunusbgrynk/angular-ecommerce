@@ -20,7 +20,7 @@ export class MiddlePartComponent implements OnInit {
     private activatedRoute:ActivatedRoute
 
     ) {}
-  title = 'Ürün Listesi'
+  title = 'Product List'
   filterText = ""
   products: Product[];
 
